@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Public+Sans:300,400,500&display=swap');
+
+:root {
+  --dark-blue: hsl(233, 26%, 24%);
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: hsl(192, 70%, 51%);
+  --grayish-blue: hsl(233, 8%, 62%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --attribution: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: 'Open Sans', sans-serifs;
+  font-size: 18px;
+}
+
+.header {
+  background-color: var(--white);
+}
+
+nav {
+  background-color: var(--white);
+}
+
+.link {
+  color: var(--dark-blue);
+}
+
+button.btn {
+  background-image: linear-gradient(
+    to right,
+    var(--bright-cyan),
+    var(--lime-green)
+  );
+}
+
+@media (max-width: 500px) {
+  .hero-img {
+    background-image: url('./images/bg-intro-mobile.svg');
+  }
+}
+
+.hero-img {
+  background-color: var(--very-light-gray);
+  background-image: url('./images/bg-intro-desktop.svg');
+  background-position: left top;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+}
+
+.hero-text h1 {
+  color: var(--dark-blue);
+  font-weight: 500;
+}
+
+.hero-text p {
+  color: var(--light-grayish-blue);
+}
+
+.next {
+  background-color: var(--light-grayish-blue);
+}
+
+footer {
+  background-color: var(--dark-blue);
+}
+
+footer ul li a {
+  color: var(--light-grayish-blue);
+  font-weight: 600;
+}
+.attribution {
+  font-size: 18px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--lime-green);
+}
