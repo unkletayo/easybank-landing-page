@@ -8,7 +8,7 @@ const x = window.matchMedia('(min-width: 768px)');
 function myFunction(x) {
   if (x.matches) {
     // If media query matches
-    navBar.classList.add('hidden');
+    navBar.style.display = 'none';
   } else {
     navBar.classList.remove('hidden');
     button.addEventListener('click', () => {
