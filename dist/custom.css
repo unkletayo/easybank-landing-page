@@ -26,6 +26,10 @@ nav ul {
   margin: 0 10%;
 }
 
+.show {
+  display: flex;
+}
+
 .link {
   color: var(--dark-blue);
 }
