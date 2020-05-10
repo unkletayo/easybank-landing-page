@@ -19,7 +19,7 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <header class="w-full">
+    <header class="w-full relative">
       <div
         class="flex items-center justify-between px-6 md:px-8 py-6 header fixed top-0 w-full"
       >
@@ -45,15 +45,21 @@
         </button>
       </div>
 
-      <nav id="nav-bar" class="mx-6 mt-24 rounded-md hidden">
-        <ul class="text-center justify-center align-middle">
-          <li class="list-none font-normal link py-2">
-            <a class="no-underline inline-block" href="#">About</a>
+      <nav id="nav-bar" class="mt-24 flex fixed md:hidden">
+        <ul
+          class="flex w-screen flex-col rounded-md text-center justify-center align-middle md:hidden"
+        >
+          <li class="list-none font-normal link px-4 py-2 o">
+            <a class="cursor-pointer no-underline inline-block" href="#"
+              >Home</a
+            >
           </li>
           <li class="list-none font-normal link py-2">
             <a class="no-underline pt-2 inline-block" href="#">About</a>
           </li>
-
+          <li class="list-none font-normal link py-2">
+            <a class="no-underline pt-2 inline-block" href="#">Contact</a>
+          </li>
           <li class="list-none font-normal link py-2">
             <a class="no-underline pt-2 inline-block" href="#">Blog</a>
           </li>

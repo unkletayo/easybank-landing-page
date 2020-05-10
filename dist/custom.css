@@ -20,8 +20,10 @@ body {
   background-color: var(--white);
 }
 
-nav {
+nav ul {
   background-color: var(--white);
+  opacity: 1;
+  margin: 0 10%;
 }
 
 .link {
@@ -34,6 +36,11 @@ button.btn {
     var(--bright-cyan),
     var(--lime-green)
   );
+}
+
+button.btn:hover {
+  color: white;
+  background: linear-gradient(to right, hsl(135, 65%, 75%), hsl(191, 70%, 55%));
 }
 
 @media (max-width: 500px) {
